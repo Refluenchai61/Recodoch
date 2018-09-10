@@ -29,6 +29,7 @@ public class HomeActivity extends AppCompatActivity {
         registros.add("Camila");
         registros.add("Rodrigo");
         registros.add("Patricia");
+        registros.add("Bianca");
 
         for (Object registro:registros) {
             TextView texto = (TextView) findViewById(R.id.Registro);

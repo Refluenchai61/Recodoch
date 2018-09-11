@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">recodoch</string>
+    <string name="app_name">Recodoch</string>
+    <string name="nome">Nome</string>
+    <string name="descricao">Descrição</string>
 </resources>

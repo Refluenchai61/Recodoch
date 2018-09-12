@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".forms.FormularioDocumentoActivity"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/form_registro_id"
+        android:hint="@string/registro_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorHint"
+        android:theme="@style/MyEditTextStyle2"
+        />
+
+    <EditText
+        android:id="@+id/form_tipo_documento_id"
+        android:hint="@string/tipo_documento_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorHint"
+        android:theme="@style/MyEditTextStyle2"
+        />
+
+    <EditText
+        android:id="@+id/form_informacoes"
+        android:hint="@string/informacoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorHint"
+        android:theme="@style/MyEditTextStyle2"
+        />
+
+    <EditText
+        android:id="@+id/form_quantidade"
+        android:hint="@string/quantidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorHint"
+        android:theme="@style/MyEditTextStyle2"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button
+            android:id="@+id/salvar"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:drawableLeft="@drawable/check"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingLeft="20px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/fundobotao"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.unknowcabbes.recodoch.LoginActivity">
+
+    <item android:id="@+id/menu_formularios"
+        android:title="Formularios"
+        android:icon="@drawable/list"
+        app:showAsAction="always"
+        >
+        <menu>
+            <item android:id="@+id/form_cliente" android:title="@string/form_cliente" />
+            <item android:id="@+id/form_cliente_complementar" android:title="@string/form_cliente_complementar" />
+            <item android:id="@+id/form_usuario" android:title="@string/form_usuario" />
+            <item android:id="@+id/form_tipo_usuario" android:title="@string/form_tipo_usuario" />
+            <item android:id="@+id/form_documento" android:title="@string/form_documento" />
+            <item android:id="@+id/form_tipo_documento" android:title="@string/form_tipo_documento" />
+        </menu>
+    </item>
+</menu>

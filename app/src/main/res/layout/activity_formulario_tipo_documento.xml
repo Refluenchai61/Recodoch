@@ -1,27 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".forms.FormularioTipoUsuarioActivity"
+android:orientation="vertical"
+app:titleTextAppearance="@style/Toolbar.TitleText"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_form_tipo_documento"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:titleTextColor="@color/colorTexts"
+        android:background="@color/colorPrimary"
+        app:titleMarginStart="32dp"/>
+
+    <EditText
+        android:id="@+id/form_nome_tipo_documento"
+        android:hint="Nome"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColorHint="@color/colorHint"
+        android:textColor="@color/colorLine"
+        android:theme="@style/MyEditTextStyle2"
+    />
+
+    <EditText
+        android:id="@+id/form_descricao_tipo_documento"
+        android:hint="Descricao"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColorHint="@color/colorHint"
+        android:textColor="@color/colorLine"
+        android:theme="@style/MyEditTextStyle2"
+    />
+
+    <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".forms.FormularioTipoDocumentoActivity"
-    android:orientation="vertical">
-
-    <EditText
-        android:hint="Nome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/formulario_nome"/>
-
-    <EditText
-        android:hint="Descricao"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/formulario_descricao"
+    >
+        <Button
+            android:id="@+id/form_salvar_tipo_documento"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:drawableLeft="@drawable/check"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingLeft="20px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/fundobotao"
         />
-    <Button
-        android:text="Salvar"
-        android:layout_width="wrap_content"
-        android:layout_height="58dp"
-        android:id="@+id/formulario_salvar"/>
-
+   </RelativeLayout>
 </LinearLayout>

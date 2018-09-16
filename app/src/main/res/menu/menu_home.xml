@@ -2,8 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="br.com.unknowcabbes.recodoch.LoginActivity">
-
+    tools:context="br.com.unknowcabbes.recodoch.HomeActivity">
+    <item
+        android:id="@+id/visualiza_doc"
+        android:title="VizualizadorGo"
+        android:icon="@drawable/visao"
+        app:showAsAction="always"
+        />
     <item android:id="@+id/menu_formularios"
         android:title="Formularios"
         android:icon="@drawable/list"

@@ -1,27 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".forms.FormularioTipoUsuarioActivity"
     android:orientation="vertical"
+    app:titleTextAppearance="@style/Toolbar.TitleText"
     >
-    <EditText
-        android:id="@+id/formulario_nome"
-        android:hint="@string/nome"
-        android:textColorHint="@color/colorHint"
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_form_tipo_usuario"
         android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:titleTextColor="@color/colorTexts"
+        android:background="@color/colorPrimary"
+        app:titleMarginStart="32dp"/>
+
+    <EditText
+        android:id="@+id/form_nome_tipo_usuario"
+        android:hint="@string/nome"
+        android:layout_width="500px"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColorHint="@color/colorHint"
+        android:textColor="@color/colorLine"
         android:theme="@style/MyEditTextStyle2"
         />
 
     <EditText
-        android:id="@+id/formulario_descricao"
+        android:id="@+id/form_descricao_tipo_usuario"
         android:hint="@string/descricao"
-        android:textColorHint="@color/colorHint"
-        android:layout_width="match_parent"
+        android:layout_width="500px"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColorHint="@color/colorHint"
+        android:textColor="@color/colorLine"
         android:theme="@style/MyEditTextStyle2"/>
 
     <RelativeLayout
@@ -29,7 +44,7 @@
         android:layout_height="match_parent"
         >
         <Button
-            android:id="@+id/salvar"
+            android:id="@+id/form_salvar_tipo_usuario"
             android:layout_width="56dp"
             android:layout_height="56dp"
             android:drawableLeft="@drawable/check"

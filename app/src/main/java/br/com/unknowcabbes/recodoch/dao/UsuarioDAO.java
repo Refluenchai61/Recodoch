@@ -4,6 +4,8 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import br.com.unknowcabbes.recodoch.model.Usuario;
+
 public class UsuarioDAO extends SQLiteOpenHelper{
     public UsuarioDAO(Context context) {
         super(context, "recodochDB", null, 1);
@@ -22,5 +24,8 @@ public class UsuarioDAO extends SQLiteOpenHelper{
         db.execSQL(sql);
         onCreate(db);
 
+    }
+
+    public void insere(Usuario usuario) {
     }
 }

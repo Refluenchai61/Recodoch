@@ -1,8 +1,11 @@
 package br.com.unknowcabbes.recodoch.dao;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import br.com.unknowcabbes.recodoch.model.Cliente;
 
 public class ClienteDAO extends SQLiteOpenHelper{
     public ClienteDAO(Context context) {
@@ -20,5 +23,15 @@ public class ClienteDAO extends SQLiteOpenHelper{
         String sql = "DROP TABLE IF EXISTS Cliente";
         db.execSQL(sql);
         onCreate(db);
+    }
+
+    public void insere(Cliente cliente) {
+        SQLiteDatabase db = getWritableDatabase();
+        ContentValues dados = new ContentValues();
+        dados.put("nome", cliente.getNome());
+        dados.put("nomeFantasia", cliente.getNomeFantasia());
+        dados.put("telefone", cliente.getTelefone());
+        dados.put("ativo", cliente.getAtivo());
+        db.insert("Cliente", null, dados);
     }
 }

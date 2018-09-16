@@ -6,41 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".forms.FormularioDocumentoActivity"
     android:orientation="vertical"
+    app:titleTextAppearance="@style/Toolbar.TitleText"
     >
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_form_documento"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:titleTextColor="@color/colorTexts"
+        android:background="@color/colorPrimary"
+        app:titleMarginStart="32dp"/>
+
     <EditText
-        android:id="@+id/form_registro_id"
+        android:id="@+id/form_registro_id_documento"
         android:hint="@string/registro_id"
-        android:layout_width="match_parent"
+        android:layout_width="500px"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:textColorHint="@color/colorHint"
+        android:textColor="@color/colorLine"
         android:theme="@style/MyEditTextStyle2"
         />
 
     <EditText
-        android:id="@+id/form_tipo_documento_id"
+        android:id="@+id/form_tipo_documento_id_documento"
         android:hint="@string/tipo_documento_id"
-        android:layout_width="match_parent"
+        android:layout_width="500px"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:textColorHint="@color/colorHint"
+        android:textColor="@color/colorLine"
         android:theme="@style/MyEditTextStyle2"
         />
 
     <EditText
-        android:id="@+id/form_informacoes"
+        android:id="@+id/form_informacoes_documento"
         android:hint="@string/informacoes"
-        android:layout_width="match_parent"
+        android:layout_width="500px"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:textColorHint="@color/colorHint"
+        android:textColor="@color/colorLine"
         android:theme="@style/MyEditTextStyle2"
         />
 
     <EditText
-        android:id="@+id/form_quantidade"
+        android:id="@+id/form_quantidade_documento"
         android:hint="@string/quantidade"
-        android:layout_width="match_parent"
+        android:layout_width="500px"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:textColorHint="@color/colorHint"
+        android:textColor="@color/colorLine"
         android:theme="@style/MyEditTextStyle2"
         />
 
@@ -49,7 +66,7 @@
         android:layout_height="match_parent"
         >
         <Button
-            android:id="@+id/salvar"
+            android:id="@+id/form_salvar_documento"
             android:layout_width="56dp"
             android:layout_height="56dp"
             android:drawableLeft="@drawable/check"

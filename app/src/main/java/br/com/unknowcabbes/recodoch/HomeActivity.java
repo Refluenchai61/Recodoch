@@ -10,18 +10,17 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
+
 import java.util.ArrayList;
 import java.util.List;
+
 import br.com.unknowcabbes.recodoch.forms.FormularioClienteActivity;
-import br.com.unknowcabbes.recodoch.forms.FormularioClienteComplementosActivity;
+import br.com.unknowcabbes.recodoch.forms.FormularioClienteComplementarActivity;
 import br.com.unknowcabbes.recodoch.forms.FormularioDocumentoActivity;
 import br.com.unknowcabbes.recodoch.forms.FormularioTipoDocumentoActivity;
 import br.com.unknowcabbes.recodoch.forms.FormularioTipoUsuarioActivity;
-import br.com.unknowcabbes.recodoch.forms.FormularioUsuarioMainActivity;
+import br.com.unknowcabbes.recodoch.forms.FormularioUsuarioActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -30,6 +29,12 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_home);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Cliente");
+        toolbar.setSubtitle("Usuário");
+        toolbar.setLogo(R.drawable.recodoch_logo);
+
 
         List registros = new ArrayList();
         registros.add("João");
@@ -52,8 +57,7 @@ public class HomeActivity extends AppCompatActivity {
         listaRegistros.setAdapter(adapter);
         Button processaDoc = (Button) findViewById(R.id.ProcessaDoc);*/
     }
-
-   @Override
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_home, menu);
@@ -63,17 +67,20 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
+            case R.id.visualiza_doc:
+                Intent VizualizadorGo = new Intent(this, VisualizaDocumentosActivity.class);
+                startActivity(VizualizadorGo);
+                break;
             case R.id.form_cliente:
-                Toast.makeText(HomeActivity.this, "OK", Toast.LENGTH_SHORT).show();
                 Intent FormClienteGo = new Intent(this, FormularioClienteActivity.class);
                 startActivity(FormClienteGo);
-            break;
+                break;
             case R.id.form_cliente_complementar:
-                Intent FormClienteCGo = new Intent(this, FormularioClienteComplementosActivity.class);
+                Intent FormClienteCGo = new Intent(this, FormularioClienteComplementarActivity.class);
                 startActivity(FormClienteCGo);
-            break;
+                break;
             case R.id.form_usuario:
-                Intent FormUsuarioGo = new Intent(HomeActivity.this, FormularioUsuarioMainActivity.class);
+                Intent FormUsuarioGo = new Intent(HomeActivity.this, FormularioUsuarioActivity.class);
                 startActivity(FormUsuarioGo);
                 break;
             case R.id.form_tipo_usuario:
@@ -83,11 +90,11 @@ public class HomeActivity extends AppCompatActivity {
             case R.id.form_documento:
                 Intent FormDocumentoGo = new Intent(HomeActivity.this, FormularioDocumentoActivity.class);
                 startActivity(FormDocumentoGo);
-            break;
+                break;
             case R.id.form_tipo_documento:
                 Intent FormTipoDGo = new Intent(HomeActivity.this, FormularioTipoDocumentoActivity.class);
                 startActivity(FormTipoDGo);
-            break;
+                break;
         }
         return super.onOptionsItemSelected(item);
     }

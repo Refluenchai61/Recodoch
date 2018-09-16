@@ -5,34 +5,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".forms.FormularioClienteActivity">
+    tools:context=".forms.FormularioClienteActivity"
+    app:titleTextAppearance="@style/Toolbar.TitleText" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_form_cliente"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:titleTextColor="@color/colorTexts"
+        android:background="@color/colorPrimary"
+        app:titleMarginStart="32dp"/>
 
     <EditText android:id="@+id/form_nome_cliente"
         android:hint="@string/nome"
-        android:layout_width="match_parent"
+        android:layout_width="500px"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:textColorHint="@color/colorHint"
+        android:textColor="@color/colorLine"
         android:theme="@style/MyEditTextStyle2"
         />
     <EditText android:id="@+id/form_nome_fantasia_cliente"
         android:hint="@string/nome_fantasia"
-        android:layout_width="match_parent"
+        android:layout_width="500px"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:textColorHint="@color/colorHint"
+        android:textColor="@color/colorLine"
         android:theme="@style/MyEditTextStyle2"
         />
     <EditText android:id="@+id/form_telefone_cliente"
         android:hint="@string/telefone"
-        android:layout_width="match_parent"
+        android:layout_width="500px"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:textColorHint="@color/colorHint"
+        android:textColor="@color/colorLine"
         android:theme="@style/MyEditTextStyle2"
         />
     <EditText android:id="@+id/form_ativo_cliente"
         android:hint="@string/ativo"
-        android:layout_width="match_parent"
+        android:layout_width="500px"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:textColorHint="@color/colorHint"
+        android:textColor="@color/colorLine"
         android:theme="@style/MyEditTextStyle2"
         />
 
@@ -41,7 +58,7 @@
         android:layout_height="match_parent"
         >
         <Button
-            android:id="@+id/salvar"
+            android:id="@+id/form_salvar_cliente"
             android:layout_width="56dp"
             android:layout_height="56dp"
             android:drawableLeft="@drawable/check"

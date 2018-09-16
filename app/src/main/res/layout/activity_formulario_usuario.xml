@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".forms.FormularioUsuarioActivity"
+    android:orientation="vertical"
+    app:titleTextAppearance="@style/Toolbar.TitleText">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_form_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:titleTextColor="@color/colorTexts"
+        android:background="@color/colorPrimary"
+        app:titleMarginStart="32dp"/>
+
+    <EditText
+        android:id="@+id/form_nome_usuario"
+        android:hint="@string/nome"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColorHint="@color/colorHint"
+        android:textColor="@color/colorLine"
+        android:theme="@style/MyEditTextStyle2"
+        />
+    
+    <EditText
+        android:id="@+id/form_login_usuario"
+        android:hint="@string/login"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColorHint="@color/colorHint"
+        android:textColor="@color/colorLine"
+        android:theme="@style/MyEditTextStyle2"
+        />
+
+    <EditText
+        android:id="@+id/form_senha_usuario"
+        android:hint="@string/senha"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColorHint="@color/colorHint"
+        android:textColor="@color/colorLine"
+        android:theme="@style/MyEditTextStyle2"
+        />
+
+    <EditText
+        android:id="@+id/form_tipo_usuario_id_usuario"
+        android:hint="@string/tipo_usuario_id"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColorHint="@color/colorHint"
+        android:textColor="@color/colorLine"
+        android:theme="@style/MyEditTextStyle2"
+        />
+
+    <EditText
+        android:id="@+id/form_ativo_usuario"
+        android:hint="@string/ativo"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColorHint="@color/colorHint"
+        android:textColor="@color/colorLine"
+        android:theme="@style/MyEditTextStyle2"
+        />
+
+    <EditText
+        android:id="@+id/form_cliente_id_usuario"
+        android:hint="@string/cliente_id"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColorHint="@color/colorHint"
+        android:textColor="@color/colorLine"
+        android:theme="@style/MyEditTextStyle2"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button
+            android:id="@+id/form_salvar_usuario"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:drawableLeft="@drawable/check"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingLeft="20px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/fundobotao"
+            />
+    </RelativeLayout>
+</LinearLayout>

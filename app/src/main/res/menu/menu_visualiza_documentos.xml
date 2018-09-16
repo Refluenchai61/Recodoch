@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.unknowcabbes.recodoch.VisualizaDocumentosActivity">
+
+    <item android:id="@+id/botao_girar"
+        android:title="Girar"
+        android:icon="@drawable/girar"
+        app:showAsAction="always"
+        >
+    </item>
+    <item android:id="@+id/botao_zoom"
+        android:title="Zoom"
+        android:icon="@drawable/zoom"
+        app:showAsAction="always"
+        >
+    </item>
+</menu>
